@@ -1,0 +1,41 @@
+#example-wrapper {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "🎨 🎨"
+    "⬅️ 🔍"
+    "⬅️ 🪟"
+    "⬅️ 🅿️"
+    "⬅️ 🖼️"
+    "⬅️ ⬆️"
+    ;
+}
+
+#theme-piker-section {
+    grid-area: 🎨;
+}
+
+#side-bar-section {
+    grid-area: ⬅️;
+}
+
+#search-section {
+    grid-area: 🔍;
+
+}
+
+#view-section {
+    grid-area: 🪟;
+}
+
+#progress-section {
+    grid-area: 🅿️;
+}
+
+#image-section{
+    grid-area: 🖼️;
+}
+
+#shape-section{
+    grid-area: ⬆️;
+}
