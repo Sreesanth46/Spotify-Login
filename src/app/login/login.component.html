@@ -1,16 +1,16 @@
-<div class="if" *ngIf="!isLoggedin()">
+<div class="if">
     <div class="background-wrap">
       <div class="background"></div>
     </div>
     
-    <form id="accesspanel" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <form id="accesspanel">
       <h1 id="litheader">Login</h1>
       <div class="inset">
         <p>
-          <input formControlName="email" type="text" name="username" id="email" placeholder="Email address">
+          <input type="text" name="username" id="email" placeholder="Email address">
         </p>
         <p>
-          <input formControlName="password" type="password" name="password" id="password" placeholder="Password">
+          <input type="password" name="password" id="password" placeholder="Password">
         </p>
   
         <input class="loginLoginValue" type="hidden" name="service" value="login" />
@@ -18,7 +18,7 @@
       <p class="p-container">
         <button type="submit" name="Login" id="go" value="Login">Login</button>
       </p>
-      <p class="g-container" (click)="login()">
+      <p class="g-container">
         <button type="button">
           Login with Google
         </button>
